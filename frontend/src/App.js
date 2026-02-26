@@ -5,6 +5,24 @@ const LandingPage = () => {
   const [minutes, setMinutes] = useState(5);
   const [seconds, setSeconds] = useState(0);
   const [activeFaq, setActiveFaq] = useState(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const heroImages = [
+    "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Dipika.png",
+    "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Meenakshi.JPG",
+    "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Myraa%20Tarwani.JPG",
+    "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Reshmi.JPG",
+    "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Sonika.jpeg",
+    "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Shruti_s%20transformation.jpeg"
+  ];
+
+  // Hero slider auto-play
+  useEffect(() => {
+    const slideInterval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+    }, 3000);
+    return () => clearInterval(slideInterval);
+  }, [heroImages.length]);
 
   // Countdown Timer
   useEffect(() => {
