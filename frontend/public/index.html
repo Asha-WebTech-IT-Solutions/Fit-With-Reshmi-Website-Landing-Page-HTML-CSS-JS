@@ -346,16 +346,22 @@
         }
 
         .transform-slider {
-            margin: 0 -10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
         }
 
         .transform-card {
             background: var(--white);
             border-radius: 20px;
             padding: 20px;
-            margin: 10px;
             box-shadow: var(--shadow-sm);
             border: 2px solid var(--primary-light);
+            transition: transform 0.3s ease;
+        }
+
+        .transform-card:hover {
+            transform: translateY(-5px);
         }
 
         .transform-card img {
