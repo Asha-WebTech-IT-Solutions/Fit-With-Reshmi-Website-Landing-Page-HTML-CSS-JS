@@ -477,14 +477,16 @@ const LandingPage = () => {
           <div className="reviews-slider">
             <div className="reviews-track">
               {[
-                "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300",
-                "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300",
-                "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300",
-                "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300",
-                "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=300",
-                "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300",
-                "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300",
-                "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300"
+                "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Dipika.png",
+                "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Meenakshi.JPG",
+                "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Myraa%20Tarwani.JPG",
+                "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Reshmi.JPG",
+                "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Sonika.jpeg",
+                "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Shruti_s%20transformation.jpeg",
+                "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Amita%20Pal.jpg",
+                "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Tanya%20Chauhan.jpg",
+                "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Dipika.png",
+                "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Meenakshi.JPG"
               ].map((img, index) => (
                 <div className="review-card" key={index}>
                   <img src={img} alt="Review" />
