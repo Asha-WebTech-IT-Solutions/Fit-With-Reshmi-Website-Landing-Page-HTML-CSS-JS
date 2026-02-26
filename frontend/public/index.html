@@ -497,17 +497,28 @@
             background: var(--light-bg);
         }
 
-        .testimonial-slider {
-            margin: 0 -10px;
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
         }
 
         .testimonial-card {
             background: var(--white);
             border-radius: 20px;
             padding: 20px;
-            margin: 10px;
             box-shadow: var(--shadow-sm);
             min-height: 300px;
+        }
+
+        .testimonial-video {
+            width: 100%;
+            height: 280px;
+            border-radius: 15px;
+            object-fit: cover;
+            background: var(--dark-text);
         }
 
         .testimonial-card .video-placeholder {
