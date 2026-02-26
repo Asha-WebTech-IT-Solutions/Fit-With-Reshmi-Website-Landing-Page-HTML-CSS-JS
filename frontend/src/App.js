@@ -141,7 +141,25 @@ const LandingPage = () => {
               <p className="cta-subtext">Limited Spots Available - Book Now!</p>
             </div>
             <div className="hero-image">
-              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600" alt="Fit With Reshmi Transformation" />
+              <div className="hero-slider">
+                {heroImages.map((img, index) => (
+                  <div 
+                    key={index} 
+                    className={`hero-slide ${index === currentSlide ? 'active' : ''}`}
+                  >
+                    <img src={img} alt={`Transformation ${index + 1}`} />
+                  </div>
+                ))}
+                <div className="slider-dots">
+                  {heroImages.map((_, index) => (
+                    <span 
+                      key={index} 
+                      className={`dot ${index === currentSlide ? 'active' : ''}`}
+                      onClick={() => setCurrentSlide(index)}
+                    ></span>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
