@@ -360,7 +360,7 @@ const LandingPage = () => {
           </div>
           <div className="coach-container">
             <div className="expert-card">
-              <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=500" alt="Reshmi Verma" />
+              <img src="https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Reshmi%20verma.jpeg" alt="Reshmi Verma" />
               <div className="expert-info">
                 <h3>Reshmi Verma</h3>
                 <p>Women's Health Practitioner<br/>Functional Nutritionist<br/>Certified Biohacker</p>
