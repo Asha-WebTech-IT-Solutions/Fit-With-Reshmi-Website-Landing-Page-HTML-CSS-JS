@@ -70,32 +70,32 @@ const LandingPage = () => {
 
   const transformations = [
     {
-      image: "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Dipika.png",
+      image: "https://fitwithreshmi.websitesdevelop.com/images/Dipika.png",
       title: "Dipika - XXXL to XL in 3 months",
       description: "Balancing a demanding IT career, Dipika proved that weight loss is possible even with a sedentary desk job."
     },
     {
-      image: "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Meenakshi.JPG",
+      image: "https://fitwithreshmi.websitesdevelop.com/images/Meenakshi.JPG",
       title: "Meenakshi - XL to M in 3 months",
       description: "This IT professional streamlined her diet to fit her busy schedule, proving 'Ghar ka Khana' works for techies."
     },
     {
-      image: "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Myraa%20Tarwani.JPG",
+      image: "https://fitwithreshmi.websitesdevelop.com/images/Myraa%20Tarwani.JPG",
       title: "Myraa - XXL to M in 6 months",
       description: "As a working mom, Myraa managed her household and career while prioritizing her health to achieve this incredible milestone."
     },
     {
-      image: "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Reshmi.JPG",
+      image: "https://fitwithreshmi.websitesdevelop.com/images/Reshmi.JPG",
       title: "Reshmi - Lost 40kg",
       description: "By addressing insulin resistance and thyroid issues, she regained her energy and freedom from joint pain."
     },
     {
-      image: "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Shruti_s%20transformation.jpeg",
+      image: "https://fitwithreshmi.websitesdevelop.com/images/Shruti_s%20transformation.jpeg",
       title: "Shruti - L to M in 3 months",
       description: "Even with the stresses of being a PG student, Shruti stayed consistent with her meals to reach her fitness goals."
     },
     {
-      image: "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Sonika.jpeg",
+      image: "https://fitwithreshmi.websitesdevelop.com/images/Sonika.jpeg",
       title: "Sonika - XXL to L in 3 months",
       description: "After collaborating with top brands like MAC and Nykaa, Sonika decided to focus on her own brand…her health."
     }
