@@ -944,6 +944,10 @@
             .comparison-cell:nth-child(4) {
                 display: none;
             }
+
+            .transform-slider {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
         @media (max-width: 768px) {
@@ -988,9 +992,20 @@
                 margin-bottom: 20px;
             }
 
-            .mobile-hero-image img {
-                width: 100%;
-                border-radius: 15px;
+            .mobile-hero-image .hero-slider {
+                height: 350px;
+            }
+
+            .transform-slider {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonial-video {
+                height: 220px;
             }
         }
 
