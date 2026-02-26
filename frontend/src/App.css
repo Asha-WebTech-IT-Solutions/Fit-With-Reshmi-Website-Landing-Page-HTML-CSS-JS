@@ -1060,9 +1060,20 @@ body {
     border-radius: 15px;
   }
 
-  .transform-grid,
+  .transform-grid {
+    grid-template-columns: 1fr;
+  }
+
   .testimonial-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .testimonial-video {
+    height: 220px;
+  }
+
+  .hero-slider {
+    height: 350px;
   }
 
   .comparison-row {
