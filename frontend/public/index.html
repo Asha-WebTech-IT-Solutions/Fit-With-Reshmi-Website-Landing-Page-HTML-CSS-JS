@@ -1665,6 +1665,41 @@
                 stickyCta.style.transform = 'translateY(0)';
             }
         });
+
+        // Hero Slider functionality
+        function initHeroSlider(sliderId, dotsId) {
+            const slider = document.getElementById(sliderId);
+            if (!slider) return;
+            
+            const slides = slider.querySelectorAll('.hero-slide');
+            const dotsContainer = document.getElementById(dotsId);
+            let currentSlide = 0;
+            
+            // Create dots
+            slides.forEach((_, index) => {
+                const dot = document.createElement('span');
+                dot.className = 'dot' + (index === 0 ? ' active' : '');
+                dot.onclick = () => goToSlide(index);
+                dotsContainer.appendChild(dot);
+            });
+            
+            function goToSlide(index) {
+                slides[currentSlide].classList.remove('active');
+                dotsContainer.children[currentSlide].classList.remove('active');
+                currentSlide = index;
+                slides[currentSlide].classList.add('active');
+                dotsContainer.children[currentSlide].classList.add('active');
+            }
+            
+            // Auto-advance slides
+            setInterval(() => {
+                goToSlide((currentSlide + 1) % slides.length);
+            }, 3000);
+        }
+        
+        // Initialize hero sliders
+        initHeroSlider('heroSlider', 'heroDots');
+        initHeroSlider('mobileHeroSlider', 'mobileDots');
     </script>
 </body>
 </html>
