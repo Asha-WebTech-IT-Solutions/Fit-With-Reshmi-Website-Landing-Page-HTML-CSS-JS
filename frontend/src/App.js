@@ -235,14 +235,28 @@ const LandingPage = () => {
             <p>Real Stories from Real Women</p>
           </div>
           <div className="testimonial-grid" data-testid="testimonial-slider">
-            {["This program changed everything for me", "Finally, something that actually works", "I feel like myself again", "Sustainable lifestyle changes that stick"].map((quote, index) => (
-              <div className="testimonial-card" key={index}>
-                <div className="video-placeholder">
-                  <i className="fas fa-play-circle"></i>
-                </div>
-                <p className="testimonial-quote">"{quote}"</p>
-              </div>
-            ))}
+            <div className="testimonial-card">
+              <video 
+                className="testimonial-video" 
+                controls 
+                poster="https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Meenakshi.JPG"
+              >
+                <source src="https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/videos/Meenakshi.mp4" type="video/mp4" />
+                Your browser does not support video.
+              </video>
+              <p className="testimonial-quote">"This program changed everything for me"</p>
+            </div>
+            <div className="testimonial-card">
+              <video 
+                className="testimonial-video" 
+                controls 
+                poster="https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Reshmi.JPG"
+              >
+                <source src="https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/videos/Consultation.mp4" type="video/mp4" />
+                Your browser does not support video.
+              </video>
+              <p className="testimonial-quote">"Finally, something that actually works"</p>
+            </div>
           </div>
           
           <div className="section-cta">
