@@ -52,24 +52,34 @@ const LandingPage = () => {
 
   const transformations = [
     {
-      image: "https://images.unsplash.com/photo-1594381898411-846e7d193883?w=400",
-      title: "PCOS Reversed in 90 Days",
-      description: "Regulated periods, clear skin, and 12kg weight loss with natural methods."
+      image: "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Dipika.png",
+      title: "Dipika - XXXL to XL in 3 months",
+      description: "Balancing a demanding IT career, Dipika proved that weight loss is possible even with a sedentary desk job."
     },
     {
-      image: "https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=400",
-      title: "Hormones Balanced Naturally",
-      description: "No more mood swings, better sleep, and increased energy levels."
+      image: "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Meenakshi.JPG",
+      title: "Meenakshi - XL to M in 3 months",
+      description: "This IT professional streamlined her diet to fit her busy schedule, proving 'Ghar ka Khana' works for techies."
     },
     {
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400",
-      title: "15kg Weight Loss Journey",
-      description: "Achieved sustainable weight loss without any crash diets or medications."
+      image: "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Myraa%20Tarwani.JPG",
+      title: "Myraa - XXL to M in 6 months",
+      description: "As a working mom, Myraa managed her household and career while prioritizing her health to achieve this incredible milestone."
     },
     {
-      image: "https://images.unsplash.com/photo-1552693673-1bf958298935?w=400",
-      title: "Clear Skin & Healthy Hair",
-      description: "Acne and hair fall reversed through holistic nutrition approach."
+      image: "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Reshmi.JPG",
+      title: "Reshmi - Lost 40kg",
+      description: "By addressing insulin resistance and thyroid issues, she regained her energy and freedom from joint pain."
+    },
+    {
+      image: "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Shruti_s%20transformation.jpeg",
+      title: "Shruti - L to M in 3 months",
+      description: "Even with the stresses of being a PG student, Shruti stayed consistent with her meals to reach her fitness goals."
+    },
+    {
+      image: "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Sonika.jpeg",
+      title: "Sonika - XXL to L in 3 months",
+      description: "After collaborating with top brands like MAC and Nykaa, Sonika decided to focus on her own brand…her health."
     }
   ];
 
