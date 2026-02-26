@@ -293,9 +293,9 @@ const LandingPage = () => {
               <video 
                 className="testimonial-video" 
                 controls 
-                poster="https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Meenakshi.JPG"
+                poster="https://fitwithreshmi.websitesdevelop.com/images/Meenakshi.JPG"
               >
-                <source src="https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/videos/Meenakshi.mp4" type="video/mp4" />
+                <source src="https://fitwithreshmi.websitesdevelop.com/videos/Meenakshi.mp4" type="video/mp4" />
                 Your browser does not support video.
               </video>
               <p className="testimonial-quote">"This program changed everything for me"</p>
@@ -304,9 +304,9 @@ const LandingPage = () => {
               <video 
                 className="testimonial-video" 
                 controls 
-                poster="https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Reshmi.JPG"
+                poster="https://fitwithreshmi.websitesdevelop.com/images/Reshmi.JPG"
               >
-                <source src="https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/videos/Consultation.mp4" type="video/mp4" />
+                <source src="https://fitwithreshmi.websitesdevelop.com/videos/Consultation.mp4" type="video/mp4" />
                 Your browser does not support video.
               </video>
               <p className="testimonial-quote">"Finally, something that actually works"</p>
