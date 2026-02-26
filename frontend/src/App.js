@@ -8,12 +8,12 @@ const LandingPage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const heroImages = [
-    "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Dipika.png",
-    "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Meenakshi.JPG",
-    "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Myraa%20Tarwani.JPG",
-    "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Reshmi.JPG",
-    "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Sonika.jpeg",
-    "https://srv1830-files.hstgr.io/bed86645a4239d9a/files/public_html/fitwithreshmi/images/Shruti_s%20transformation.jpeg"
+    "https://fitwithreshmi.websitesdevelop.com/images/Dipika.png",
+    "https://fitwithreshmi.websitesdevelop.com/images/Meenakshi.JPG",
+    "https://fitwithreshmi.websitesdevelop.com/images/Myraa%20Tarwani.JPG",
+    "https://fitwithreshmi.websitesdevelop.com/images/Reshmi.JPG",
+    "https://fitwithreshmi.websitesdevelop.com/images/Sonika.jpeg",
+    "https://fitwithreshmi.websitesdevelop.com/images/Shruti_s%20transformation.jpeg"
   ];
 
   // Hero slider auto-play
