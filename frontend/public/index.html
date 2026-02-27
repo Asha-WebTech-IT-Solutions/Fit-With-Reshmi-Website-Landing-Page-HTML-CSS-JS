@@ -970,6 +970,15 @@
             .primary-btn {
                 padding: 14px 30px;
                 font-size: 16px;
+                display: block;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                width: fit-content;
+            }
+
+            .cta-subtext {
+                text-align: center;
             }
 
             .stats-container {
@@ -990,6 +999,16 @@
             .mobile-hero-image {
                 display: block;
                 margin-bottom: 20px;
+                order: -1;
+            }
+
+            .hero-text {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .hero-text .mobile-hero-image {
+                order: -1;
             }
 
             .mobile-hero-image .hero-slider {
@@ -1006,6 +1025,21 @@
 
             .testimonial-video {
                 height: 220px;
+            }
+
+            .hero-content {
+                flex-direction: column;
+            }
+
+            .problem-text,
+            .what-you-get-text {
+                text-align: center;
+            }
+
+            .problem-text .primary-btn,
+            .what-you-get-text .primary-btn,
+            .section-cta .primary-btn {
+                margin: 0 auto;
             }
         }
 
