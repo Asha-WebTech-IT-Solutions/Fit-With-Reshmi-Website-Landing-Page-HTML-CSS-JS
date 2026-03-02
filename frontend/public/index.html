@@ -1094,6 +1094,29 @@
             border-radius: 4px;
         }
     </style>
+
+    <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  
+  fbq('init', '1204782934874733');
+  fbq('track', 'PageView');
+</script>
+
+<noscript>
+  <img height="1" width="1" style="display:none"
+       src="https://www.facebook.com/tr?id=1204782934874733&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
+    
 </head>
 <body>
     <!-- Header -->
@@ -1137,8 +1160,8 @@
                         <li><i class="fas fa-check-circle"></i> Personalized plans that fit YOUR lifestyle</li>
                     </ul>
 
-                    <a href="#book-consultation" class="primary-btn shake-btn" data-testid="hero-cta-btn">
-                        Book Your Free Consultation
+                    <a href="https://rzp.io/rzp/UtkwSGV4" class="primary-btn shake-btn" data-testid="hero-cta-btn">
+                        head
                     </a>
                     <p class="cta-subtext">Limited Spots Available - Book Now!</p>
                 </div>
@@ -1234,8 +1257,8 @@
                     <p><strong>You're stuck in the loop:<br>Start → Struggle → Quit → Repeat.</strong></p>
                     <p>But the problem isn't you — it's the system you've been following.</p>
                     
-                    <a href="#book-consultation" class="primary-btn shake-btn" data-testid="problem-cta-btn">
-                        Book Your Free Consultation
+                    <a href="https://rzp.io/rzp/UtkwSGV4" class="primary-btn shake-btn" data-testid="problem-cta-btn">
+                        </head>
                     </a>
                     <p class="cta-subtext">Start Your Healing Journey Today</p>
                 </div>
@@ -1303,8 +1326,8 @@
             </div>
             
             <div style="text-align: center; margin-top: 40px;">
-                <a href="#book-consultation" class="primary-btn shake-btn" data-testid="testimonial-cta-btn">
-                    Book Your Free Consultation
+                <a href="https://rzp.io/rzp/UtkwSGV4" class="primary-btn shake-btn" data-testid="testimonial-cta-btn">
+                    </head>
                 </a>
                 <p class="cta-subtext">Join These Success Stories</p>
             </div>
@@ -1387,7 +1410,7 @@
             </div>
             
             <div style="text-align: center; margin-top: 40px;">
-                <a href="#book-consultation" class="primary-btn shake-btn" data-testid="benefits-cta-btn">
+                <a href="https://rzp.io/rzp/UtkwSGV4" class="primary-btn shake-btn" data-testid="benefits-cta-btn">
                     Book Your Free Consultation
                 </a>
                 <p class="cta-subtext">Start Your Transformation Today</p>
@@ -1496,7 +1519,7 @@
             </div>
             
             <div style="text-align: center; margin-top: 40px;">
-                <a href="#book-consultation" class="primary-btn shake-btn" data-testid="reviews-cta-btn">
+                <a href="https://rzp.io/rzp/UtkwSGV4" class="primary-btn shake-btn" data-testid="reviews-cta-btn">
                     Book Your Free Consultation
                 </a>
                 <p class="cta-subtext">Start Your Success Story Today</p>
@@ -1585,7 +1608,7 @@
         <div class="sticky-timer">
             Offer ends in <span id="minutes">5</span>:<span id="seconds">00</span>
         </div>
-        <a href="#book-consultation" class="primary-btn sticky-btn shake-btn" data-testid="sticky-cta-btn">
+        <a href="https://rzp.io/rzp/UtkwSGV4" class="primary-btn sticky-btn shake-btn" data-testid="sticky-cta-btn">
             Book Your Free Consultation
         </a>
     </div>
@@ -1688,6 +1711,34 @@
         // Initialize hero sliders
         initHeroSlider('heroSlider', 'heroDots');
         initHeroSlider('mobileHeroSlider', 'mobileDots');
+
+// ==========================
+// META PIXEL LEAD TRACKING
+// ==========================
+
+document.addEventListener("DOMContentLoaded", function () {
+    
+    const consultationButtons = document.querySelectorAll(
+        '[data-testid="hero-cta-btn"],' +
+        '[data-testid="problem-cta-btn"],' +
+        '[data-testid="testimonial-cta-btn"],' +
+        '[data-testid="benefits-cta-btn"],' +
+        '[data-testid="reviews-cta-btn"],' +
+        '[data-testid="sticky-cta-btn"]'
+    );
+
+    consultationButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Lead');
+            }
+
+        });
+    });
+
+});
+</script>
     </script>
 </body>
 </html>
