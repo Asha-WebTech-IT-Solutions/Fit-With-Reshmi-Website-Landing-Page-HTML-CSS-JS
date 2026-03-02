@@ -1161,7 +1161,7 @@
                     </ul>
 
                     <a href="https://rzp.io/rzp/UtkwSGV4" class="primary-btn shake-btn" data-testid="hero-cta-btn">
-                        head
+                        Book Your Free Consultation
                     </a>
                     <p class="cta-subtext">Limited Spots Available - Book Now!</p>
                 </div>
@@ -1258,7 +1258,7 @@
                     <p>But the problem isn't you — it's the system you've been following.</p>
                     
                     <a href="https://rzp.io/rzp/UtkwSGV4" class="primary-btn shake-btn" data-testid="problem-cta-btn">
-                        </head>
+                        Book Your Free Consultation
                     </a>
                     <p class="cta-subtext">Start Your Healing Journey Today</p>
                 </div>
@@ -1327,7 +1327,7 @@
             
             <div style="text-align: center; margin-top: 40px;">
                 <a href="https://rzp.io/rzp/UtkwSGV4" class="primary-btn shake-btn" data-testid="testimonial-cta-btn">
-                    </head>
+                   Book Your Free Consultation
                 </a>
                 <p class="cta-subtext">Join These Success Stories</p>
             </div>
@@ -1712,10 +1712,6 @@
         initHeroSlider('heroSlider', 'heroDots');
         initHeroSlider('mobileHeroSlider', 'mobileDots');
 
-// ==========================
-// META PIXEL LEAD TRACKING
-// ==========================
-
 document.addEventListener("DOMContentLoaded", function () {
     
     const consultationButtons = document.querySelectorAll(
@@ -1728,17 +1724,23 @@ document.addEventListener("DOMContentLoaded", function () {
     );
 
     consultationButtons.forEach(function(button) {
-        button.addEventListener("click", function() {
+        button.addEventListener("click", function(e) {
+
+            e.preventDefault(); // stop instant redirect
+            const url = this.href;
 
             if (typeof fbq !== 'undefined') {
-                fbq('track', 'Lead');
+                fbq('track', 'Lead', {}, {
+                    eventID: 'lead_' + Date.now()
+                });
             }
 
+            setTimeout(function() {
+                window.location.href = url;
+            }, 500); // wait 500ms then redirect
         });
     });
-
 });
 </script>
-    </script>
 </body>
 </html>
