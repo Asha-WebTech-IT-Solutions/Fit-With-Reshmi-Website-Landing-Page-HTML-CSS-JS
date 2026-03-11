@@ -80,13 +80,26 @@ Please book your time slot below.
 </p>
 
 <!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget"
-data-url="https://calendly.com/fitwithreshmii/15min?hide_gdpr_banner=1"
-style="width:100%; min-width:320px; height:900px;">
-</div>
+<div id="calendly-container"></div>
 
 <script src="https://assets.calendly.com/assets/external/widget.js"></script>
-<!-- Calendly inline widget end -->
+
+<script>
+window.onload = function() {
+Calendly.initInlineWidget({
+url: 'https://calendly.com/fitwithreshmii/15min?hide_gdpr_banner=1',
+parentElement: document.getElementById('calendly-container'),
+});
+};
+</script>
+
+<style>
+#calendly-container{
+width:100%;
+min-width:320px;
+height:950px;
+}
+</style>
 
 </div>
 
