@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -14,6 +15,7 @@ font-family:'Outfit',sans-serif;
 background:#FFF5F8;
 text-align:center;
 padding:50px 20px;
+margin:0;
 }
 
 .container{
@@ -36,9 +38,44 @@ font-size:18px;
 margin-bottom:25px;
 }
 
+/* Calendly */
+
+#calendly-container{
+width:100%;
+min-width:320px;
+height:950px;
+}
+
+/* Download section */
+
+#download-section{
+display:none;
+margin-bottom:30px;
+padding:30px;
+background:#FFF0F5;
+border-radius:12px;
+}
+
+.download-btn{
+display:inline-block;
+background:#E91E63;
+color:#fff;
+padding:15px 30px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+margin-top:15px;
+font-size:18px;
+}
+
+.download-btn:hover{
+background:#d81b60;
+}
+
 </style>
 
-<!-- Meta Pixel Code -->
+<!-- Facebook Pixel -->
+
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -50,7 +87,6 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
 fbq('init', '1204782934874733');
-
 fbq('track', 'PageView');
 
 fbq('track', 'Purchase', {
@@ -59,12 +95,6 @@ currency: 'INR',
 content_name: 'PCOS Consultation'
 });
 </script>
-
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1204782934874733&ev=PageView&noscript=1"/>
-</noscript>
-
 
 </head>
 
@@ -75,34 +105,69 @@ src="https://www.facebook.com/tr?id=1204782934874733&ev=PageView&noscript=1"/>
 <h1>✅ Payment Successful</h1>
 
 <p>
-Your consultation is confirmed.
+Your consultation is confirmed.  
 Please book your time slot below.
 </p>
 
-<!-- Calendly inline widget begin -->
+<!-- DOWNLOAD SECTION (TOP) -->
+
+<div id="download-section">
+
+<h2 style="color:#E91E63;">🎉 Your Call is Booked!</h2>
+
+<p>
+Important: Download your <strong>PCOS Healing Bundle</strong> before leaving this page.
+</p>
+
+<a href="https://fitwithreshmi.com/booking-complete.html" class="download-btn">
+Download PCOS Bundle
+</a>
+
+</div>
+
+<!-- Calendly widget -->
+
 <div id="calendly-container"></div>
 
 <script src="https://assets.calendly.com/assets/external/widget.js"></script>
 
 <script>
+
 window.onload = function() {
 Calendly.initInlineWidget({
 url: 'https://calendly.com/fitwithreshmii/15min?hide_gdpr_banner=1',
-parentElement: document.getElementById('calendly-container'),
+parentElement: document.getElementById('calendly-container')
 });
 };
-</script>
 
-<style>
-#calendly-container{
-width:100%;
-min-width:320px;
-height:950px;
+/* Detect booking completion */
+
+window.addEventListener('message', function(e) {
+
+if (e.data.event && e.data.event.indexOf('calendly.event_scheduled') === 0) {
+
+var section = document.getElementById("download-section");
+
+section.style.display = "block";
+
+/* Scroll user to the top */
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+/* Facebook booking event */
+
+fbq('track','Schedule');
+
 }
-</style>
+
+});
+
+</script>
 
 </div>
 
 </body>
-
 </html>
